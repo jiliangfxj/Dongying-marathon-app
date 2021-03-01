@@ -1,0 +1,10 @@
+<view class='rootView' bindtap='onAnyElementsInsideTapped'>
+  <view id='items' class='itemsContainer' animation='{{animationMain}}'>
+    <slot name='menuItems' />
+  </view>
+  <view capture-catch:tap="mainBtnTapped" class='menu-main'>
+    <slot name='main' />
+  </view>
+<view class='mask' wx:if="{{isPopuped}}">
+</view>
+</view>

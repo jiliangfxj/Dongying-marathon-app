@@ -1,0 +1,78 @@
+
+<view class="container more" style="height: 120%;">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="edit">查看或编辑个人主页</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <button class="more_share1" bindtap="xunlianpeisu">马拉松训练配速</button>
+      </view>
+    </view>
+    
+   
+   
+    
+    
+
+     <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/share.png"></image>
+      </view>
+      <view class="myitem-name flex-item" style="border-bottom:none;">
+        <navigator hover-class='none' url="../more/more">
+         <button class="more_share" open-type='share' hover-class='none'>分享给好友</button>
+        </navigator>
+      </view>
+    </view>
+
+    
+     <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/gengduosaishi.png"></image>
+      </view>
+      <view class="myitem-name flex-item" style="border-bottom:none;">
+        <navigator hover-class='none' url="../more/more">
+         <button class="more_share" bindtap='gengduosaishi'>查看更多赛事</button>
+        </navigator>
+      </view>
+    </view>
+
+
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/bushu.png"></image>
+      </view>
+      <view class="myitem-name flex-item" >
+        <navigator hover-class='none' url="../more/more">
+         <button class="more_share" style="border-bottom:none;" bindtap='chakanbushu'>查看步数</button>
+        </navigator>
+      </view>
+    </view>
+    
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/lianxiwomen.png"></image>
+      </view>
+      <view class="myitem-name flex-item" >
+        <navigator hover-class='none' url="../more/more">
+         <button class="more_share"  bindtap='lianxiwomen'>联系我们</button>
+        </navigator>
+      </view>
+    </view>
+  
+   
+
+  </view>
+</view>

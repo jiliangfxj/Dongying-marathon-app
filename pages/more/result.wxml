@@ -1,0 +1,131 @@
+<!--pages/index/result.wxml-->
+<view class="result_boss">
+
+
+  <view class="result_main">
+  
+  
+  
+    <view class="nengli">
+
+        当前能力水平  
+
+    </view>
+
+    <view class="gongli">
+
+      <text class="five">5公里</text>
+      <text>{{inputValue_fen}}:{{inputValue_miao}}</text>
+      
+    </view>
+
+
+    <view class="xinlv">
+      <text class="current_xinlv">当前最大心率</text>
+      <text>{{inputValue_xinlv}}</text>
+
+    </view>
+
+    <view class="tuijian">
+
+      推荐的最佳训练配速
+
+    </view>
+
+    <view class="container">
+
+        
+          
+          
+        
+
+      <view class="list1 list-title">公里配速，最大心率%</view>
+      <view class="list2">
+        <text>轻松跑</text>
+        <text class="qingsongpao">{{qingsongpao1}}-{{qingsongpao2}}</text>
+        <text class="fr">,65-79</text>
+      </view>
+
+
+        <view class="list1">
+        <text>有氧阈值(E配速中)</text>
+        <text class="youyang">{{youyang}}</text>
+        <text class="fr">,75.5</text>
+      </view>
+
+
+
+        <view class="list2">
+        <text>长距离慢跑(E配速中上)</text>
+        <text class="changman">{{changman1}}-{{changman2}}</text>
+      <text class="fr">,75.5-79</text>
+      </view>
+
+
+        <view class="list1">
+        <text>匀速跑</text>
+        <text class="yunsu">{{yunsu}}</text>
+      <text class="fr">,82</text>
+      </view>
+
+        <view class="list2">
+        <text>长距离节奏跑(全马M配速)</text>
+        <text class="changjiezou">{{changjiezou}}</text>
+      <text class="fr">,86.1</text>
+      </view>
+
+
+
+        <view class="list1">
+        <text>力量节奏跑(半马H配速)</text>
+        <text class="liliangjiezou">{{liliangjiezou}}</text>
+      <text class="fr">,89.4</text>
+      </view>
+
+
+
+        <view class="list2">
+        <text>中距离节奏跑(乳酸门槛T配速)</text>
+        <text class="zhongjiezou">{{zhongjiezou}}</text>
+      <text class="fr">,91.9</text>
+      </view>
+
+
+
+        <view class="list1">
+        <text>间歇速度联系(I配速)</text>
+        <text class="jianxie">{{jianxie1}}-{{jianxie2}}</text>
+      <text class="fr">>~93.2</text>
+      </view>
+
+
+
+        <view class="list2">
+        <text>最大摄氧量配速间歇训练</text>
+    <text class="zuida">{{zuida}}</text>
+      <text class="fr">-</text>
+      </view>
+
+
+
+        <view class="list1">
+        <text>大步跑(1英里配速百米左右短跑)</text>
+        <text class="dasbupao">{{dasbupao}}</text>
+      <text class="fr">-</text>
+      </view>
+
+
+
+        <view class="list2">
+        <text>短间歇重复跑(R配速)</text>
+        <text class="duanchongfu">{{duanchongfu1}}-{{duanchongfu2}}</text>
+      <text class="fr">-</text>
+      </view>
+
+
+
+    </view>
+  
+  </view>
+
+</view>

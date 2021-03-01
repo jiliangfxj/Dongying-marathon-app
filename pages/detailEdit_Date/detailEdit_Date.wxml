@@ -1,0 +1,33 @@
+<view class="container root">
+  <view>
+    <view class='item'>
+      <view class='caption'>事件名称</view>
+      <input class='value' placeholder='请输入事件名称' focus='true' value='{{detail.title}}' bindinput='onTitleChanged'></input>
+    </view>
+    
+    <view class='item' wx:if='{{loopModes[multiIndex[0]].value===unLoopModeValue}}'>
+      <view class='caption'>比赛日期</view>
+      <picker class='value' mode='date' bindchange='onEndDateChanged' fields="day" value='{{detail.endDate}}' bindinput='onEndDateChanged'>
+        <view class='picker'>
+          {{detail.endDate}}
+        </view>
+      </picker>
+    </view>
+ 
+    <view class='item'>
+      <switch type='checkbox' wx:if='{{loopModes[multiIndex[0]].value===unLoopModeValue}}' checked='{{detail.autoReserve}}' class='value' bindchange='onAutoReserveChanged' style='display:flex;align-items:center;'>完成自动删除</switch>
+    </view>
+    <view class='item'>
+      <view class='caption'>备注</view>
+      <textarea class='value' placeholder='填写备注' value='{{detail.remark}}' bindinput='onRemarkChanged' style='height:100rpx;vertical-align:text-top;width:100%;'></textarea>
+    </view>
+  </view>
+  <view class='item'>
+    <button type='primary' style='width:100%;' bindtap='onCreateBtnClicked'>
+      <view>
+        <text wx:if="{{isNew}}">创建</text>
+        <text wx:else>更新</text>
+      </view>
+    </button>
+  </view>
+</view>

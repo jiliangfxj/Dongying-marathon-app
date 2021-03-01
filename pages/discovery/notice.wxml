@@ -1,0 +1,2 @@
+<!--pages/discovery/notice.wxml-->
+<web-view src="http://www.hhkgjmls.net/News/list.asp?cataid=A00830002"></web-view>

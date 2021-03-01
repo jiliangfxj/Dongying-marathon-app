@@ -1,0 +1,39 @@
+<!--pages/index/ind-2.wxml-->
+<view>
+<text class="ind-title">抵御寒冷+促进恢复 冷天跑步后五种最佳热饮</text>
+<text class="ind-time">发布时间：2017/02/12</text>
+
+
+<text class="ind-content"  decode="{{true}}"  space="{{true}}">
+&nbsp;&nbsp;在跑步之后我们需要及时补充一些水分，尤其是在寒冷的冬日，在完成1次艰苦的跑步之后，没有什么比喝上一杯健康的热饮更舒服的事情了。日前美国《跑者世界》总结了最适合在跑步之后饮用的5种热饮料，它们能够帮助你很快从寒冷中走出来，而且还可以加快你身体的恢复速度。
+</text>
+<view class="imagesize">
+<image src='../../images/ind-2-1.jpg'></image>
+</view>
+
+
+
+<text class="ind-title1">1.墨西哥风味热巧克力</text>
+<text class="ind-content"  decode="{{true}}"  space="{{true}}">
+&nbsp;&nbsp;这种苦甜参半的巧克力含有多酚，跑步之后身体消耗较大，饮用这种热巧克力可以帮助提高血流量，进而改善你的跑步能力，辣椒中的热量还可以加速你身体的新陈代谢，牛奶当中的蛋白质和碳水化合物可以帮助你的肌肉恢复。
+
+制作方法：1杯低脂牛奶、1盎司 70％可可棒（切碎）、2茶匙原糖、1/4茶匙香草和一小片地面辣椒，加热并搅拌至巧克力均匀的融化。
+</text>
+<view class="imagesize">
+<image src="../../images/ind-2-2.jpg"></image>
+</view>
+
+
+
+<text class="ind-title1">2.姜黄茶</text>
+<text class="ind-content"  decode="{{true}}"  space="{{true}}">
+&nbsp;&nbsp;作为印度风格咖喱食物的主要构成，姜黄部分由姜黄素制成，可以很好的起到抗炎的效果。在东方医学中，姜黄素通常用来治疗消化系统疾病和关节炎。研究还发现这种植物化学物质可以对抗来自艰难训练的氧化损伤。
+
+制作方法：将一个新鲜的、未剥皮的姜黄切片，然后放在水里煮4-5分钟。同时还可以试试姜黄茶包，这也是一种富含姜黄色素的健康用品。
+</text>
+<view class="imagesize">
+<image src="../../images/ind-2-3.jpg"></image>
+</view>
+
+<view class="zhuanzi">（转自中国马拉松）</view>
+</view>

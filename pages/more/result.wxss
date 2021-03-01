@@ -1,0 +1,119 @@
+/* pages/index/result.wxss */
+view{
+  padding-top: 3%;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.result_boss{
+  width: 100%;
+}
+.result_main{
+  width: 90%;
+  margin: 0 auto;
+ 
+  border-radius: 15rpx;
+}
+.nengli{
+  background-color:  rgb(243, 72, 49);
+  padding: 5px 10px;
+  width: 40%;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 34rpx;
+  color: white;
+  
+}
+.gongli{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 31rpx;
+ 
+}
+.gongli .five{
+  margin-right: 10%;
+ 
+  font-size: 31rpx;
+}
+.xinlv{
+   width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3%;
+  
+  font-size: 31rpx;
+}
+.current_xinlv{
+  margin-right: 10%;
+}
+.tuijian{
+  background-color:  rgb(243, 72, 49);
+  padding: 5px 10px;
+  width: 60%;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 34rpx;
+  color: white;
+  margin-bottom: 4%;
+}
+.container{
+  margin-top: 0;
+  padding-top: 3%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container view{
+  font-size: 31rpx;
+}
+.list-title{
+  text-align:right;
+}
+.list1{
+  background-color: #F9FAFC;
+  width: 100%;
+  padding-bottom: 2%;
+}
+.list2{
+  background-color: #FFF;
+  width: 100%;
+   
+  padding-bottom: 2%;
+}
+.qingsongpao{
+  margin-left: 45%;
+}
+.youyang{
+  margin-left: 23%;
+}
+.changman{
+  margin-left: 15%;
+}
+.yunsu{
+  margin-left: 46%;
+}
+.changjiezou{
+  margin-left: 9%;
+}
+.liliangjiezou{
+  margin-left: 14%;
+
+}
+.jianxie{
+  margin-left: 20%;
+}
+.zuida{
+  margin-left: 11%;
+}
+.zhongjiezou{
+  margin-left: 2%;
+}
+
+.duanchongfu{
+  margin-left: 17%;
+}

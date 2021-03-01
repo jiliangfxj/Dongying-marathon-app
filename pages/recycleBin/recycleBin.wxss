@@ -1,0 +1,40 @@
+/**index.wxss**/
+@import '../../templates/eventItemRecycledTemplate/eventItemRecycledTemplate.wxss';
+
+
+.header {
+  box-sizing: border-box;
+  padding: 10rpx;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.event-list:first-child {
+  border-top: 1rpx solid #e0e0e0;
+  background: red;
+}
+
+.event-list-item {
+  border-bottom: 1rpx solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 45rpx;
+}
+
+.event-list-item>.content {
+  flex-grow: 1;
+}
+
+.event-list-item>.operation {
+  flex-grow: 0;
+}
+
+.tipsForNoEvent {
+  color: gray;
+  margin-top: 50%;
+  font-size: 40rpx;
+}

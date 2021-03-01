@@ -1,0 +1,31 @@
+<template name='eventItemTemplate'>  
+      <view class="eventItemTemplate-event-list-item">
+        <view class='eventItemTemplate-eventContent'>
+          <text>{{title}} </text>
+          <text class='eventItemTemplate-remark'>{{remark}}</text>
+        </view>
+        <view class='eventItemTemplate-endInfos'>
+          <!--截止信息-->
+          <view>
+            <!--截止次数-->
+            <view wx:if="{{typeId==1}}">
+              <em class='appForeground'>{{endTicks-tickList.length}}</em>次</view>
+            <!--截止时间-->
+            <view wx:if="{{typeId==0}}">
+              <view wx:if="{{endDays>2}}">
+                <em class='appForeground'>{{endDays}}</em>天</view>
+              <view wx:if="{{endDays==2}}">
+                <em style='color:green;'>后天</em></view>
+              <view wx:if="{{endDays==1}}">
+                <em style='color:green;'>明天</em></view>
+              <view wx:if="{{endDays==0}}">
+                <em style='color:green;'>今天</em></view>
+              <view wx:if="{{endDays<0}}">
+                <em style='color:red;'>{{endDays}}</em>天</view>
+            </view>
+            
+            <view wx:if='{{countOfUnfinishedTodo!=null&&countOfUnfinishedTodo>0}}' class='eventItemTemplate-subInfos'>{{countOfUnfinishedTodo}}待办</view>
+          </view>
+        </view>
+      </view>
+</template>

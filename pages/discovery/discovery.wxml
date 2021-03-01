@@ -1,0 +1,205 @@
+
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <swiper class="activity" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="155"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dongyingsaishi">
+
+    <button  bindtap='goNotice'>
+    <image src="../../images/notice.jpg"></image>
+    </button>
+
+    <button bindtap='goDownload'>
+     <image src="../../images/download.jpg"></image>
+    </button>
+
+    <button bindtap='goResult'>
+     <image src="../../images/result_query.jpg"></image>
+    </button>
+    <button bindtap='goSign'>
+     <image src="../../images/sign-up.jpg"></image>
+    </button>
+      
+ 
+     
+     
+    </view>
+    <navigator hover-class='none' url="../discovery/discovery">
+  
+      <button type="primary" class="share_run" open-type='share' hover-class='none'>邀请好友一起奔跑</button>
+
+    </navigator>
+   
+  </view>
+
+
+  <!-- 玩在东营开始 -->
+  <view class="ctnt1 " hidden="{{currentNavtab==1 ? '' : true}}">
+    <button class="wan_btn"  bindtap='xinshiji'>
+      <image src="../../images/xinshiji.jpg" class="wan"></image>
+      <view class="wan_title">新世纪广场</view>
+      <text class="wan_content">新世纪广场为东营市标志性工程，建成于1998年9月。占地总面积17万平方米，其中...</text>
+    
+    </button>
+
+
+
+     <button class="wan_btn"   bindtap='ruhaikou'>
+      <image src="../../images/ruhaikou.jpg" class="wan"></image>
+      <view class="wan_title">黄河入海口</view>
+      <text class="wan_content">黄河口位于渤海与莱州湾交汇处，是1855年黄河由铜瓦厢决口改道夺大清河入海演变而...</text>
+    
+    </button>
+
+
+
+    <button class="wan_btn" bindtap='sunwu'>
+      <image src="../../images/sunwu.jpg" class="wan"></image>
+      <view class="wan_title">孙武祠</view>
+      <text class="wan_content">孙武祠位于广饶县城中心，占地面积7000多平方米。该祠以关帝庙为主体，内含4个融...</text>
+    
+    </button>
+
+
+
+
+    <button class="wan_btn" bindtap='richu'>
+      <image src="../../images/richu.jpg" class="wan"></image>
+      <view class="wan_title">黄河入海口的海上日出</view>
+      <text class="wan_content">黄河入海口的海上日出，分外奇伟壮观。黎明前，海面上黑沉沉的，唯听得见海浪涌动的声...</text>
+    
+    </button>
+
+
+
+
+
+    <button class="wan_btn" bindtap='daqiao'>
+      <image src="../../images/daqiao.jpg" class="wan"></image>
+      <view class="wan_title">胜利黄河大桥</view>
+      <text class="wan_content">胜利黄河大桥位于垦利县城东北侧，1985年12月28日，国务委员康世恩为大桥开工...</text>
+    
+    </button>
+
+
+
+
+    <button class="wan_btn" bindtap='jinianbei'>
+      <image src="../../images/jinianbei.jpg" class="wan"></image>
+      <view class="wan_title">黄河水体纪念碑</view>
+      <text class="wan_content">黄河水体纪念碑位于东营市东城清风湖南侧、广利河北岸，是世界上第一座大型水体纪念碑...</text>
+    
+    </button>
+
+  </view>
+  <!-- 玩在东营结束 -->
+
+
+
+
+  <!-- 比赛倒计时开始 -->
+   <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+    <!--比赛倒计时-->
+<import src='../../templates/eventItemTemplate/eventItemTemplate.wxml' />
+
+<sideSlip open='{{isSideSlipOpned}}' bindclosed='onSideSlipClosed'>
+  <view slot='content' class='item-root' style='height:100%'>
+    <view class='item'>
+      <view class='caption storageInfoHeader'>
+        <text>存储</text>
+        <text>已使用{{storageInfo.currentSize}}KB/{{storageInfo.limitSize-storageInfo.currentSize}}KB</text>
+      </view>
+      <progress class='value' percent='{{storageInfo.currentSize/storageInfo.limitSize*100}}' stroke-width='20' activeColor='gray' backgroundColor='#0078D7' />
+    </view>
+
+      <view class='item'>
+        <button style='display: flex; align-items: center;justify-content: center; width:100%;' plain='true' bindtap='onRecycleBinTapped'>
+          <image src='images/recyclebin.png' style='width:48rpx;height:48rpx;margin-right:10rpx;' />回收站</button>
+      </view>
+      <!-- <view class='item'>
+        <button open-type='feedback' plain='true' style='width:100%;'>提交反馈</button>
+      </view> -->
+    </view>
+</sideSlip>
+<view id='rootView' class="container root">
+  <view class='header appBackground'>
+    <image src='images/menu.png' class="sideMenu" bindtap="onSidMenuTapped" />
+    <text class='slogo'>{{today}}</text>
+  </view>
+  <scroll-view wx:if="{{events!=null&&events.length>0}}" scroll-y="true" class='begin-of-content event-list'>
+    <view wx:for="{{events}}" wx:for-item="event" wx:key="index">
+      <view data-event="{{event}}" bindtap='onEventItemTapped' catchlongpress='onEventItemLongTapped' class='event-list-item'>
+        <template is='eventItemTemplate' data='{{...event}}' />
+      </view>
+    </view>
+  </scroll-view>
+  <view wx:if="{{events==null||events.length==0}}" class='tipsForNoEvent'>没有任何事件，试着添加一个吧。</view>
+
+  <popMenu class='menu'>
+    <view slot='menuItems'>
+      <view bindtap='onCreateDateEventTapped' class='menuItem appBackground'>
+        设置倒计时
+        <image src='images/date.png' mode='aspectFit' class='menuIco appBackground' />
+      </view>
+      
+    </view>
+    <view class='plusBtn appBackground' slot='main'>+</view>
+  </popMenu>
+</view>
+
+<model></model>
+  </view>
+  <!-- 比赛倒计时结束 -->
+
+
+  <!-- 喊出口号开始 -->
+  <view class="ctnt4 placehold" hidden="{{currentNavtab==3 ? '' : true}}">
+    <view class='launchGird'>
+  
+  <view class='displayGroup'>
+      <view class='dmGroup' wx:for="{{ dmData }}" wx:key="{{ item.id }}"  style="top:{{ item.top }}%; animation: dmAnimation {{item.time}}s linear {{ index*1 }}s infinite; ">
+        <view class='dmItem'>
+          <view class='dm'>
+            <view class='avatarBox'>
+              <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+              <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+            </view>
+            <text class='content'>{{ item.content }}</text>
+            <image src='{{ iconGood }}' class='icon good' mode='aspectFill'></image>
+            <text>{{ item.zanNumber }}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='focus'>
+        <image class="banner-img" src='{{ banner }}' ></image>
+      </view>
+      <view class='shadowOverlay'></view>
+
+  </view>
+
+  <input bindinput="hanchukouhao" placeholder='请输入你的口号' class="kouhao"></input>
+   <navigator url="../index/index" open-type="redirect" hover-class='none'>
+      
+  
+      <button class="share_run fabiao button button-raised button-caution" open-type='share' hover-class='none'>发表</button>
+
+    </navigator>
+ 
+
+</view>
+  </view>
+  <!-- 喊出口号结束 -->
+</scroll-view>

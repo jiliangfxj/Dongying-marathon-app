@@ -1,0 +1,50 @@
+/* pages/index/ind-3.wxss */
+/* pages/index/ind-2.wxss */
+
+/* pages/index/ind-1.wxss */
+text{
+  display: block;
+  margin-bottom: 0;
+}
+textarea{
+  display: block;
+}
+.ind-title{
+	font-size: 50rpx;
+	text-align: center;
+  font-weight: bolder;
+}
+.ind-time{
+	font-size: 30rpx;
+	text-align: center;
+  color:rgb(187, 179, 179);
+}
+.ind-title1{
+	font-size: 40rpx;
+	font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+.ind-content{
+  font-size: 35rpx;
+
+}
+.imagesize{
+display:flex;
+               
+ justify-content: center;        
+ align-items:center;
+}
+ 
+image{
+  width: 98%;
+  margin:auto;
+  text-align: center;
+}
+
+.zhuanzi{
+  font-size: 40rpx;
+  font-weight: bold;
+  display: block;
+  color:rgb(126, 124, 122);
+}

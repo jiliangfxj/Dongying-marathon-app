@@ -1,0 +1,50 @@
+<form  bindsubmit="formSubmit">
+<view class="boss">
+
+<view class='title'>马拉松训练配速</view>
+<view class="peisu-container">
+  <view class="con-main">
+<view class="con1">
+  <text class="fl">最近比赛距离</text>
+    <text class="fr">5公里</text>
+
+</view>
+
+    <view class="sudu_input">
+    
+        <text class="time_su">用时</text>
+    
+      
+    
+        <input type="text" name="fen" class="fen" bindinput="bindKeyInput_fen" ></input><text class="hui">分</text> 
+        <input type="text" name="miao" class="miao" bindinput="bindKeyInput_miao" ></input><text class="hui">秒</text>
+    
+    </view>
+
+    <view class="zuidaxinlv">
+    
+      <view class="xinlv_title">
+      
+         <text class="max">最大心率（未知时可不填）</text><input class="xinlv" type="text" bindinput="bindKeyInput_xinlv" ></input><text class="hui">次/分钟</text>
+
+      
+      </view>
+      <view class="xinlv_main">
+         高效的周期性训练需要在不同的配速下进行，以促进身体进行全方面的适应性。请输入最近一次你的比赛成绩，或尽全力训练时的成绩，来计算出在不同训练方式下的合理训练配速和心率区间。
+    
+      </view>
+     </view>
+   
+
+  </view>
+
+</view>
+
+
+<!--input.wxml-->
+
+
+<button class="btn button button-glow button-rounded button-caution" style="width: 95%;padding-top:4px;" data-fen="{{inputValue_fen}}" data-miao="{{inputValue_miao}}" bindtap="jisuan">计算</button>
+
+</view>
+</form>

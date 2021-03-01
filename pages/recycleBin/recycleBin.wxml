@@ -1,0 +1,17 @@
+<!--recycleBin.wxml-->
+<import src='../../templates/eventItemRecycledTemplate/eventItemRecycledTemplate.wxml' />
+
+<view id='rootView' class="container root" bindtap='onRootViewTapped'>
+  <view class='common-tip' wx:if="{{events.length>0}}"><image src='images/tip.png' style='width:32rpx;height:32rpx;'/>记录会被保留{{maxDaysReserve}}天。之后将永远删除。</view>
+  <scroll-view wx:if="{{events!=null&&events.length>0}}" scroll-y="true" class='event-list'>
+    <view wx:for="{{events}}" wx:for-item="event" wx:key="index">
+      <view class='event-list-item'>
+        <view class='content'>
+          <template is='eventItemRecycledTemplate' data='{{...event}}' />
+        </view>
+        <image src='images/restore.png' style='width:48rpx;height:48rpx;' class='operation' data-recycleditem='{{event}}' catchtap='onRestoreTapped'></image>
+      </view>
+    </view>
+  </scroll-view>
+  <view wx:if="{{events==null||events.length==0}}" class='tipsForNoEvent'>回收站是空的。</view>
+</view>

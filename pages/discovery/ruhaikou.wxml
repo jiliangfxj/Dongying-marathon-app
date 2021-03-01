@@ -1,0 +1,3 @@
+<!--pages/discovery/ruhaikou.wxml-->
+<web-view src="http://www.hhkgjmls.net/News/Show.asp?id=1520"></web-view>
+

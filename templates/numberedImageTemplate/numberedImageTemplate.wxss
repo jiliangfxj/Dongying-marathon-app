@@ -1,0 +1,21 @@
+.numberedImgRoot {
+  position: relative;
+}
+
+.badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.7em;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background: white;
+  color: gray;
+  border-color: transparent;
+  padding: 1rpx;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+/*pages/leftSwiperDel/index.wxss */
+
+view {
+  box-sizing: border-box;
+}
+
+.item {
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 100rpx;
+  overflow:hidden;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+}
+
+.inner.content {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  transition: left 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inner.menu {
+  text-align: center;
+  vertical-align: middle;
+  z-index: 4;
+  right: 0;
+}

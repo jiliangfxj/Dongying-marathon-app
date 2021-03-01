@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "",
+    "usingComponents": {
+      "popMenu": "/components/popMenu/popMenu",
+      "sideSlip": "/components/sideSlip/sideSlip"
+    }
+}

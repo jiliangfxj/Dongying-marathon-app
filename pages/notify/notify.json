@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "发帖",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "WxComment": "../WxComment/component/WxComment/WxComment"
+  }
+}

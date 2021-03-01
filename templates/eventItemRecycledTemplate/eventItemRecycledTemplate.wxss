@@ -1,0 +1,34 @@
+.eventItemRecycledTemplate-event-list-item {
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eventItemRecycledTemplate-event-list-item .eventItemRecycledTemplate-eventContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.eventItemRecycledTemplate-event-list-item .eventItemRecycledTemplate-eventContent>.eventItemRecycledTemplate-remark {
+  color: gray;
+  font-size: 80%;
+}
+
+.eventItemRecycledTemplate-event-list-item .eventItemRecycledTemplate-endInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.eventItemRecycledTemplate-event-list-item .eventItemRecycledTemplate-endInfos em {
+  font-size: 150%;
+}
+
+.eventItemRecycledTemplate-event-list-item .eventItemRecycledTemplate-endInfos .eventItemRecycledTemplate-subInfos {
+  color: gray;
+  font-size: 80%;
+}

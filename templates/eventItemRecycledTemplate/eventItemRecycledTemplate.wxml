@@ -1,0 +1,13 @@
+<template name='eventItemRecycledTemplate'>
+  <view class="eventItemRecycledTemplate-event-list-item">
+    <view class='eventItemRecycledTemplate-eventContent'>
+      <text>{{originalItem.title}} </text>
+      <text class='eventItemRecycledTemplate-remark'>{{originalItem.remark}}</text>
+    </view>
+    <view class='eventItemRecycledTemplate-endInfos'>
+      <!--剩余天数-->
+      <view>
+        <em class='appForeground' style="{{daysReserve<3?'color:red;':''}}">{{daysReserve}}</em>天</view>
+    </view>
+  </view>
+</template>

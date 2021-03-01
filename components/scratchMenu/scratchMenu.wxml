@@ -1,0 +1,12 @@
+<view>
+  <view class="item">
+    <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="{{txtStyle}}" class="inner content">
+      <slot name='content'></slot>
+    </view>
+
+    <view class="inner menu">
+      <slot name='menu'></slot>
+    </view>
+    
+  </view>
+</view>

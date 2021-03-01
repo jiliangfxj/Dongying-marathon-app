@@ -1,0 +1,58 @@
+<import src='../../templates/numberedImageTemplate/numberedImageTemplate.wxml' />
+
+<view class='root'>
+  <view class='eventDetail shadowBlock' >
+    <view class='titleBar'>
+      <text class='title'>{{detail.title}}</text>
+      <text class='remark'>{{detail.remark}}</text>
+    </view>
+    <view class='detailBar'>
+      <view class='detail-top'>{{detail.loopMode == consts.unLoopModeValue?'距结束':'距下次'}}</view>
+      <view class='detail-middle'>
+        <view wx:if="{{detail.typeId==consts.eventType_Date}}">
+          <em class='appForeground'>{{detail.endDays}}</em>天</view>
+        <view wx:if="{{detail.typeId==consts.eventType_Tick}}">
+          <em class='appForeground'>{{detail.endTicks-detail.tickList.length}}</em>次</view>
+      </view>
+      <view class='detail-bottom'>
+        <text wx:if="{{detail.typeId==consts.eventType_Date&&detail.loopMode==consts.unLoopModeValue}}" class='tag'>截止于{{detail.endDate}}</text>
+        <text wx:if="{{detail.typeId==consts.eventType_Date&&detail.loopMode!==consts.unLoopModeValue}}" class='tag'>{{loopDisplay}}</text>
+        <text wx:if="{{detail.typeId==consts.eventType_Tick}}" class='tag'>共{{detail.endTicks}}次</text>
+        <text wx:if='{{detail.autoReserve}}' class='tag'>自动删除</text>
+      </view>
+    </view>
+    <view class='operationBar' wx:if='{{!isAppInShareScene}}'>
+      <view class='left' wx:if="{{detail.typeId==consts.eventType_Tick}}">
+       
+        <view class='operationItem' wx:if="{{detail.tickList.length>0}}" bindtap='onTickHisTapped'>
+          <template is='numberedImage' data='{{imgUrl:"images/tick-his.png",numberValue:detail.tickList.length}}' />
+        </view>
+      </view>
+      <!--An empty view place to make the right view could place on the right when the left view donot display-->
+      <view></view>
+      <view class='right'>
+        <image src='images/delete.png' class='operationItem img' bindtap='onDeleteTapped'></image>
+        <image src='images/edit.png' class='operationItem img' bindtap='onEditTapped'></image>
+      </view>
+    </view>
+  </view>
+ 
+  <!-- <view class='ad-banner'>
+    <view class='ad-container'>
+      <ad unit-id="adunit-04b45cb79bf17561"></ad>
+    </view>
+  </view> -->
+</view>
+
+<modal hidden="{{isTickModalHidden}}" title="请输入打卡备注" confirm-text="确认打卡" cancel-text="取消" bindcancel="onTickModalCanceled" bindconfirm="onTickModalConfirmed">
+  <input type='text' placeholder="请输入内容" bindconfirm='onTickDescComfirmed' focus='{{!isTickModalHidden}}' />
+</modal>
+<modal hidden="{{isTickHistoryHidden}}" title="打卡记录" bindcancel="onTickHisModalCanceled" bindconfirm="onTickHisModalConfirmed">
+  <view wx:for='{{detail.tickList}}' wx:key='item'>
+    <text>{{item.time}}{{item.desc===undefined?'':': '+item.desc}}</text>
+  </view>
+</modal>
+<!-- todo -->
+<modal hidden="{{isTodoModalHidden}}" title="" bindcancel="onTodoModalCanceled" bindconfirm="onTodoModalConfirmed">
+  <input type='text' placeholder="请输入内容" bindconfirm='onTodoDescComfirmed' focus='{{!isTodoModalHidden}}' value='{{todoItemInModel.title}}'></input>
+</modal>

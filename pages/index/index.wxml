@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+ 
+  <view class="ind-1">
+    <button bindtap='goToTalkPage1'>
+      <image src="../../images/ind-1.jpg"></image>
+    </button>
+    <text class="ind-txt-1">立夏已至 夏天咋跑早知道</text>
+    <text class="ind-txt-2">2017/05/06</text>
+  </view>
+
+   <view class="ind-1">
+    <button bindtap='goToTalkPage2'>
+      <image src="../../images/ind-2-1.jpg"></image>
+    </button>
+    <text class="ind-txt-1">抵御寒冷+促进恢复 </text>
+    <text class="ind-txt-2">2017/05/06</text>
+  </view>
+
+   <view class="ind-1">
+    <button bindtap='goToTalkPage3'>
+      <image src="../../images/ind-3.jpg"></image>
+    </button>
+    <text class="ind-txt-1">节后如何恢复跑步训练</text>
+    <text class="ind-txt-2">2017/05/06</text>
+    </view>
+
+
+  <view class="ind-1">
+    <button bindtap='goToTalkPage4'>
+      <image src="../../images/huxi.jpg"></image>
+    </button>
+    <text class="ind-txt-1">马拉松呼吸技巧</text>
+    <text class="ind-txt-2">2017/05/06</text>
+  </view> 
+
+  <view class="ind-1">
+    <button bindtap='goToTalkPage5'>
+      <image src="../../images/paoliang.jpg"></image>
+    </button>
+    <text class="ind-txt-1">跑步虽好，但不是越多越好</text>
+    <text class="ind-txt-2">2017/05/06</text>
+  </view>
+
+
+
+  <view class="ind-end">
+  
+    已经到底部了= - =
+
+  </view>
+
+
+
+</scroll-view>
+

@@ -1,0 +1,6 @@
+<template name='numberedImage'>
+  <view class='numberedImgRoot'>
+    <image class='img' src='{{imgUrl}}' style='width:48rpx;height:48rpx;'></image>
+    <view class='badge' data-badge="{{numberValue}}"/>
+  </view>
+</template>

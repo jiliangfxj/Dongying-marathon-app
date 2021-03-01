@@ -1,0 +1,6 @@
+<view class="sideslip {{isOpened ? 'c-state-opened' : 'c-state-closed'}}"  catchtap='onAnyElementsInsideTapped'>
+  <view class='content' animation='{{animationMain}}'>   
+    <slot name='content'/>
+  </view>
+  <view class='mask' id='sideSlip_mask'></view>
+</view>

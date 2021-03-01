@@ -1,0 +1,152 @@
+@import '../../templates/numberedImageTemplate/numberedImageTemplate.wxss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 30rpx;
+}
+
+
+
+.eventDetail {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.eventDetail>.titleBar {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid lightgray;
+  padding-bottom: 10rpx;
+}
+
+
+
+.eventDetail>.titleBar>.remark {
+  font-size: 80%;
+  color: gray;
+}
+
+.eventDetail>.detailBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 0rpx;
+}
+
+
+
+.eventDetail>.detailBar>.detail-middle em {
+  font-size: 100rpx;
+}
+
+.eventDetail>.detailBar>.detail-bottom {
+  align-self: flex-end;
+  font-size: 70%;
+  color: gray;
+}
+
+.eventDetail>.detailBar>.detail-bottom>text {
+  margin: 0rpx 5rpx;
+  font-size: 8pt;
+}
+
+.eventDetail>.operationBar {
+  box-sizing: border-box;
+  border-top: 1rpx solid lightgray;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eventDetail>.operationBar>.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.eventDetail>.operationBar>.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.eventDetail>.operationBar .operationItem {
+  margin: 5rpx;
+}
+
+.eventDetail>.operationBar .img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.todoListBar {
+  margin-top: 20rpx;
+}
+
+
+
+.todoListBar .todoListGroup {
+  margin-top: 20rpx;
+}
+
+
+
+.todoListBar .todoListGroup .todoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.todoListBar .todoListGroup .todoItem>checkbox[checked] {
+  color: lightgray;
+  overflow: hidden;
+}
+
+
+
+.todoListBar .todoListGroup .todoItem .todoItemMenu>.todoItemMenuItem {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.share {
+  width: 38rpx;
+  height: 36rpx;
+  padding: 0 20rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 38rpx 36rpx;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.shareOperationsBar {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 10rpx;
+  right: 20rpx;
+  left: 20rpx;
+}
+
+.shareOperation {
+  margin: 10rpx 0rpx;
+}
+
+.ad-banner {
+  margin-top: 80rpx;
+  width: 100%;
+}
+
+.ad-container{
+  width: 100%;
+}

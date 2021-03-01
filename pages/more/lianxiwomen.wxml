@@ -1,0 +1,9 @@
+<!--pages/more/lianxiwomen.wxml-->
+<view class="button button-block button-rounded button-large" style="margin-bottom: 5%;width:100%;">联系我们</view>
+<view class="btn button button-primary">微信号：baidusousuo10086</view>
+<view class="btn button button-primary">微信号：liqingbinali520</view>
+<view class="btn button button-primary">qq：2678593407</view>
+<view class="btn button button-primary">qq：2455572021</view>
+<view class="btn button button-primary">邮箱：jiliangfxj@163.com</view>
+<view class="btn button button-primary">邮箱：2455572021@qq.com</view>
+

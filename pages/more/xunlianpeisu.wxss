@@ -1,0 +1,105 @@
+/**xunlianpeisu.wxss**/
+@import "button.wxss";
+.boss{
+  width: 100%;
+  padding-bottom: 340rpx;
+  
+  background-color: #E9ECF1;
+}
+text{
+  font-size: 34rpx;
+}
+
+
+.xinlv_main{
+  font-size: 32rpx;
+  padding-right: 4%;
+  line-height: 2;
+  padding-bottom: 15%;
+
+}
+.title{
+  margin-left: 6%;
+}
+.con1{
+  padding-top: 4%;
+  margin-bottom: 4%;
+}
+.sudu_input{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.xinlv_title{
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+.fl{
+  /* float: left; */
+  margin-right: 50%;
+ 
+}
+.fr{
+  /* float: right */
+  margin-right: 2%;
+}
+.hui{
+  color: #ccc;
+}
+.con-main{
+  margin-left: 4%;
+  
+}
+
+
+.xinlv{
+  display: inline-block;
+  border-bottom: 0.5rpx solid #ccc;
+  width: 20%;
+}
+.peisu-container{
+  background-color: white;
+  border-radius: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 95%;
+  margin: 0 auto;
+}
+.fen{
+  display: inline-block;
+  border-bottom: 0.5px solid #ccc;
+  width: 20%;
+
+   font-size: 30rpx;
+  margin-left: 20%;
+}
+.miao{
+  display: inline-block;
+  border-bottom: 0.5rpx solid #ccc;
+  width: 20%;
+   font-size: 30rpx;
+   margin-left: 5%;
+}
+.btn{
+  width: 90%;
+    border-radius: 20px;
+    background: #ff4531;
+    color: white;
+    
+  display: block;
+ 
+ padding: 0 6px;
+ 
+ line-height: 2;
+ margin: 0 auto;
+ margin-top: 4%;
+}
+.btn1{
+margin-left: 7%;
+margin-right: 4%;
+  background: white;
+  color: rgb(243, 72, 49);
+}
+
+button::after{ 
+	border: none; 
+}

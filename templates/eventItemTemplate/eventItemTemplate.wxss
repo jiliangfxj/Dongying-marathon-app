@@ -1,0 +1,34 @@
+.eventItemTemplate-event-list-item {
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eventItemTemplate-event-list-item .eventItemTemplate-eventContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.eventItemTemplate-event-list-item .eventItemTemplate-eventContent>.eventItemTemplate-remark {
+  color: gray;
+  font-size: 80%;
+}
+
+.eventItemTemplate-event-list-item .eventItemTemplate-endInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.eventItemTemplate-event-list-item .eventItemTemplate-endInfos em {
+  font-size: 150%;
+}
+
+.eventItemTemplate-event-list-item .eventItemTemplate-endInfos .eventItemTemplate-subInfos {
+  color: gray;
+  font-size: 80%;
+}

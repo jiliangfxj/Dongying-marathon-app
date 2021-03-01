@@ -1,0 +1,38 @@
+/* pages/index/ind-5.wxss */
+
+text{
+  display: block;
+  margin-bottom: 0;
+}
+textarea{
+  display: block;
+}
+.ind-title{
+	font-size: 50rpx;
+	text-align: center;
+  font-weight: bolder;
+}
+.ind-time{
+	font-size: 30rpx;
+	text-align: center;
+  color:rgb(187, 179, 179);
+}
+.ind-title1{
+	font-size: 40rpx;
+	font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+.ind-content{
+  font-size: 35rpx;
+
+}
+
+.zhuanzi{
+  font-size: 35rpx;
+  font-weight: bold;
+  display: block;
+  color:rgb(126, 124, 122);
+}
+
+ 

@@ -1,0 +1,28 @@
+.sideslip {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.sideslip>.content {
+  width: 75%;
+  background-color: white;
+}
+
+.sideslip>.mask {
+  width: 25%;
+  background: gray;
+  opacity: 0.6;
+}
+
+.c-state-opened {
+  transform: rotate(0deg) translate(0%, 0%);
+  -webkit-transform: rotate(0deg) translate(0%, 0%);
+}
+.c-state-closed{
+  transform: rotate(0deg) translate(-100%, 0%);
+  -webkit-transform: rotate(0deg) translate(-100%, 0%);
+}

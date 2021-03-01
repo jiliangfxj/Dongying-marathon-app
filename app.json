@@ -1,0 +1,139 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discovery/discovery",
+    "pages/notify/notify",
+    "pages/chat/chat",
+    "pages/more/more",
+  
+   
+    "pages/logs/logs",
+    "pages/index/ind-1",
+    "pages/index/ind-2",
+    "pages/index/ind-3",
+    "pages/index/ind-4",
+    "pages/index/ind-5",
+    "pages/discovery/notice",
+    "pages/discovery/download",
+    "pages/discovery/result",
+    "pages/discovery/sign",
+
+    "pages/discovery/xinshiji",
+    "pages/discovery/ruhaikou",
+    "pages/discovery/sunwu",
+    "pages/discovery/richu",
+    "pages/discovery/daqiao",
+    "pages/discovery/jinianbei",
+
+
+    "pages/detailView/detailView",
+    "pages/detailEdit_Date/detailEdit_Date",
+    "pages/recycleBin/recycleBin",
+
+
+   
+  
+    
+    "pages/more/xunlianpeisu",
+    "pages/more/result",
+    "pages/more/gengduosaishi",
+    "pages/more/chakanbushu",
+    "pages/more/lianxiwomen",
+
+    "pages/comment/comment",
+    "pages/post/post",
+    "pages/WxComment/component/WxComment/WxComment"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#332E4F",
+    "navigationBarTitleText": "东营马拉松running",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+    
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+   
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "赛事",
+        "iconPath": "images/discovery.png",
+        "selectedIconPath": "images/discovery_focus.png"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "text": "发帖",
+        "iconPath": "images/ring.png",
+        "selectedIconPath": "images/ring_focus.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "跑步",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "我的",
+        "iconPath": "images/burger.png",
+        "selectedIconPath": "images/burger_focus.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序位置接口 的效果展示"
+    }
+  },
+  "subPackages": [
+    {
+      "root": "index/",
+      "pages": [
+        "ind-1",
+        "ind-2",
+        "ind-3",
+        "ind-4",
+        "ind-5"
+      ]
+    },
+    {
+      "root": "discovery/",
+      "pages": [
+        "daqiao",
+        "jinianbei",
+        "xinshiji",
+        "suwu",
+        "ruhaikou",
+        "richu"
+      ]
+    },
+    {
+      "root": "more/",
+      "pages": [
+        "chakanbushu",
+        "gengduosaishi",
+        "result",
+        "saish",
+        "xunlianpeisu"
+      ]
+    }
+  ]
+}

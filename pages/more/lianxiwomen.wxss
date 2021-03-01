@@ -1,0 +1,6 @@
+/* pages/more/lianxiwomen.wxss */
+@import "button.wxss";
+.btn{
+  width: 100%;
+  margin-bottom: 2%;
+}
